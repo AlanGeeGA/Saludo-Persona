@@ -1,0 +1,9 @@
+-- Tabla Saludos
+
+create table saludos (
+	id serial primary key,
+	tipo varchar(30) not null unique,
+	saludo varchar(30) not null
+);
+
+select * from saludos;

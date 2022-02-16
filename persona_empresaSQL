@@ -1,0 +1,21 @@
+-- Tabla Empresa
+
+create table empresa (
+	id serial primary key,
+	empresa varchar(30) not null,
+	direccion varchar(60) not null
+);
+
+-- Tabla Personas
+
+create table personas (
+	id serial primary key,
+	nombre varchar(30) not null unique,
+	edad integer not null,
+	direccion varchar(60) not null,
+	id_empresa integer not null,
+	FOREIGN KEY (id_empresa) REFERENCES empresa(id)
+);
+
+select * from personas;
+select * from empresa;
