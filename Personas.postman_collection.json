@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "1004f91b-8f3b-4a46-872d-0f04a1eeef10",
+		"name": "Personas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1833/api/getPersonas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/personas/getPersonas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"personas",
+						"getPersonas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1833/api/personas/getPersonaPorNombre/Ramon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/personas/getPersonaPorNombre/Ramon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"personas",
+						"getPersonaPorNombre",
+						"Ramon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/personas/agregarPersona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Ramon\",\r\n    \"edad\" : 26,\r\n    \"direccion\" : \"Colonia Guadalupe\",\r\n    \"nombreEmpresa\" : \"Neoris\",\r\n    \"direccionEmpresa\" : \"Blvrd Alfonso Zaragoza Maytorena\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/personas/agregarPersona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"personas",
+						"agregarPersona"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
